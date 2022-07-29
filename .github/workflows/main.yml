@@ -66,7 +66,7 @@ jobs:
           # passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             # Выполняет pull образа с DockerHub
-            sudo docker pull ezhikoff1/infra_actions
+            sudo docker pull ezhikoff/iinfra_project
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
-            sudo docker run --rm -d -p 5000:5000 ezhikoff1/infra_actions
+            sudo docker run --rm -d -p 5000:5000 ezhikoff/iinfra_project
